@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLAS</title>
+</head>
+<body>
+    <h2 style="text-align: center;">TABLAS</h2>
+    <!--
+Las tablas definas en si mismas por filas y columnas, generan un mapa
+de ordenacion, con determinado formato surgen tablas 
+Sintaxis:
+        ETIQUETA                    DESCRIPCIÓN
+    <table>                         Etiqueta contenedora de la tabla
+    <th>                            table-head datos cabecera
+    <tr>                            table-row datos de la fila
+    <td>                            table-date, datos de cada una de las celdas
+    <caption>                       Etiqueta contenedora para titulos de las tablas
+    -->
+    <h3 style="text-align: center ;">Ejemplo de tabla simple</h3>
+    <table border="1" bgcolor="grey" style="text-align: center;" align="center">
+        <caption>Numeracion del 1 al 12</caption>
+        <tr>
+            <td>UNO</td>
+            <td>DOS</td>
+            <td>TRES</td>
+        </tr>
+        <tr>
+            <td>CUATRO</td>
+            <td>CINCO</td>
+            <td>SEIS</td>
+        </tr>
+        <tr>
+            <td>SIETE</td>
+            <td>OCHO</td>
+            <td>NUEVE</td>
+        </tr>
+        <tr>
+            <td>DIEZ</td>
+            <td>ONCE</td>
+            <td>DOCE</td>
+        </tr>
+    </table>
+    <h3 style="text-align:center ;">Combinacion de Celdas</h3>
+    <!--
+        COMBINACION DE CELDAS
+
+        Atributo           Valor                                      Descripcion
+
+        colspan           numero=espacios                  Numero de columnas/espacios que la celda abarcará
+        rowspan           numero=espacios                  Número de filas/espacios qsue abarcara
+
+    -->
+    <table border="2" style="text-align: center; " align="center">
+        <tr>
+        <th>Columna 1º</th>
+        <th>Columna 2º</th>
+        <th>Columna 3º</th>
+        <th>Columna 4º</th>
+    </tr>
+    <tr>
+        <td colspan="2">Dato 1</td>
+        <!--unir columnas-->
+  <!--       <td>Dato 2</td> -->
+        <td>Dato 3</td>
+        <td rowspan="3">Dato 4</td>
+        <!--
+            Unir filas
+        -->
+    </tr>
+    <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+        <!-- <td>Dato 4</td> -->
+    </tr>
+    <tr>
+        <td colspan="2" rowspan="2">Dato 1</td>
+       <!--  <td>Dato 2</td> -->
+        <td>Dato 3</td>
+        <!-- <td>Dato 4</td> -->
+    </tr>
+    <tr>
+        <!-- <td>Dato 1</td> -->
+        <!-- <td>Dato 2</td> -->
+        <td>Dato 3</td>
+        <td>Dato 4</td>
+    </tr>  
+    </table>
+    <h3 style="text-align: center;">Agrupaciones de Columnas</h3>
+    <table style="text-align: center; " align="center">
+        <caption>Periodico Digital</caption>
+        <tr>
+            <th>NEw´s</th>
+            <th>DEPORTES</th>
+            <th>TIEMPO</th>
+        </tr>
+        <tr>
+            <td>Nacionales</td>
+            <td>Futbol</td>
+            <td>España</td>
+        </tr>
+        <tr>
+            <td>Internacionales</td>
+            <td>Baloncesto</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Sucesos</td>
+            <td>Tenis</td>
+            <td>Prevision 48h</td>
+        </tr>
+        <colgroup>
+            <col style="background-color:lemonchiffon ;"/>
+            <col span="2" style="background-color: lightsalmon;" />
+        </colgroup>
+        <!--
+            span, dentro de la etiqueta colgroup, dicho atributo defgine la aplicacion de estilos en las
+            dos siguientes columnas
+        -->
+    </table>
+    <h3 style="text-align: center;">Ejercio Tabla principales buscadores</h3>
+    <h4>Condiciones</h4>
+    <ul>
+        <li>2 columnas y tres filas</li>
+        <li>Fondo de la cabecera negro y letras en azul</li>
+        <li>tabla centrada asi como datos/elementos</li>
+        <li>Añadir enlaces</li>
+        <li>Añadir imagenes en los enlaces</li>
+    </ul>
+    <table style="text-align:center ;" align="center">
+<caption style="text-align: center;">Principales Buscadores</caption>
+<tr style="color:skyblue ; background-color:black ;">
+    <th>Buscadores</th>
+    <th>Descripcion</th>
+</tr>
+<tr>
+    <td> <a href="http://www.google.es" target="_blank"><img src="../Ejemplo5-thumbnails/images/google.png" width="80px" alt=""></a></td>
+    <td>Principal buscador de America y Centro-Europa</td>
+</tr>
+<tr>
+    <td> <a href="https://www.bing.com/"><img src="images/kisspng-bing-web-search-engine-computer-icons-google-searc-5aee622e0e8dc2.9162800915255721420596.png" width="80px" alt=""></a></td>
+    <td>Principal buscador Europa y CentroAsiatico</td>
+</tr>
+    </table>
+</body>
+</html>
