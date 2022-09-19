@@ -1,0 +1,75 @@
+nav{
+    width: 400px;
+    background-color: #e4d9e0;
+    margin: 0 auto;
+    /*
+    margin.- Establece los margenes de los 4 ejes
+    abreviamos para cada eje, realizansdo por separado
+    con las otras propiedades de margen
+    0px en vertical y horizontal y automatico, en simetria en izquierda y drcha
+    */
+}
+li a{
+    color: #238cf5;
+}
+span{
+  background-color:  #68aaec;
+  padding: 30px;
+  /*
+  padding un espacio de relleno requerido por todos los lados(ejes), definiendo el area
+  de padding como el espacio entre el contenido del elemento y su borde limite
+  */
+  color: white;
+  font-size: 50px;
+  display:block ;
+  /*
+  display los mas utilizados serán block y inline, entendidos
+  block: se tranforma en elemento de bloque alli donde apuenta
+  inline: Siempre ocupará el espacio disponible en la linea, aunque los contenidos no ocupen todo el sitio
+  */
+}
+#click{
+    /*feedback checked, referenciado a un interruptor*/
+    opacity: 0;
+    /*
+    opacity: definido como la transparencia de un elemento, es decir el grado en el que el elemento es visible
+    teniendo como parametros 0=invisible y 1=visible, asi como todos los rangos del 0 al 1
+    */
+    height: 0px;
+    width: 0px;
+}
+.desliz{
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    clear: both;
+    /*
+    clear.- Especifica que si un elemento puede estar al lado de otro elemento flotantante que lo precede o si debe ser movido
+    */
+    overflow: hidden;
+    /*
+    overflow.- contenido recortado y que no se muestra en la barra de posicion
+    */
+    transition: .5s;
+}
+.desliz li{
+    padding: 20px;
+}
+#click:checked+.desliz{
+    height: 400px;
+}
+h2{
+    text-align: center;
+    color: cornflowerblue;
+
+}
+p{
+    font-size: large;
+
+}
+div,a{
+    text-align: center;
+    margin: 0 auto;
+    width: 30%;
+ 
+}
