@@ -1,0 +1,58 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: navy;
+}
+div{
+
+    width: 980px;
+    margin: 0 auto;
+    text-align: center;
+}
+header{
+    width: 980px;
+    height: 120px;
+    background-color: yellow;
+}
+nav{
+width: 980px;
+height: 80px;
+background-color: navy;
+color: yellow;
+float: left;
+
+}
+section{
+    float: left;
+    width: 780px;
+    height: 420px;
+    background-color: lightgray;
+}
+article{
+    float: left;
+    width: 780px;
+    background-color: #eee;
+    border-top: 2px solid lightgray;
+    min-height: 200px;
+    /*
+    min-height: Si la altura necesaria para mostrar contenidos es inferior a la altura
+    minima, se fuerza la a que la altura del elemento sea igual que la altura minima
+    */
+
+}
+aside{
+
+    float: right;
+    width: 200px;
+    height: 220px;
+    background-color: sandybrown;
+    margin: auto;
+    border-bottom: 10px solid lightgray ;
+}
+footer{
+
+    float: left;
+    width: 980px;
+    background-color: gold;
+    height: 80px;
+    
+}

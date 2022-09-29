@@ -1,0 +1,94 @@
+/*
+Comentarios
+*/
+/*
+============
+    CSS
+============
+Definido como hojas de estilo en cascada (Cascanding Style Sheet), no es mas que otro lenguaje
+con la finalidad de poder definir los estilos de presentacion de los documentos asociaciados y 
+estructurados en el lenguaje HTML.
+*/
+/*
+1. ESTILOS PARA UNA ETIQUETA O MAS
+sintaxis:
+
+etiqueta,etiqueta,etiqueta....{
+    atributo:valor;
+}
+*/
+h2{
+    background-color: beige;
+}
+h3,h4,h5,h6{
+    color: slategray;
+    text-align: center;
+    font-weight: bold;
+}
+/*
+2. ESTILO DEFINIDO POR UNA CLASE
+Sintaxis:
+.NombreAsociado{
+    atributo:valor;
+}
+*/
+
+.tipoLetra{
+    color:green ;
+    font-size: xx-large;
+    text-align: justify;
+}
+.titulos{
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: xx-large;
+    font-style: italic;
+}
+/*
+3.ESTILOS DEFINIDO POR UN IDENTIFICADOR
+Sintaxis: 
+    #NombreId{
+        atributo:valor;
+    }
+
+*/
+#otraopcion{
+    background-color: yellowgreen;
+    font-style: oblique;
+    color: brown;
+}
+/*
+El selector de identificacion (id) siendo su selector representado por (#)
+El selector de indenficacion de Clase siendo su selector representado por (.)
+Su diferenciacion la encontramos en la referencia donde id podrá ser usado como identificador
+de un elemento dentro de un estilo y la clase podrá usarse para uno o mas basado en la asociacion
+
+*/
+
+/*
+4. ESTILOS DE ASOCIACION
+Sintaxis:
+etiqueta.nombre(clase){
+    atributo:valor;
+}
+*/
+/*Union de dos estilos 1 y 2*/
+table,td.estructura{
+    border: 2px solid cornflowerblue;
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto 0;
+   
+}
+ol{
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}

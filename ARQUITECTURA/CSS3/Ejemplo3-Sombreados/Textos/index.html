@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombreados de Texto</title>
+</head>
+<body>
+
+
+<!--
+    Parcheo de Style, donde puedo desarrollar directamente trabajando como un archivo de css
+    sin necesidad de linkar
+-->
+
+
+<style>
+/*
+text-shadow, Como propiedad agrega sobre el texto una sombra definida, por capas. 
+estableceremos una serie de capas, separadas ',' y acepta valores negativos, y
+ plantea la siguiente sintaxis: 
+1ºvalorpx 2ºvalorpx 3ºvalorpx rgb, y siguientes
+1º valor. desplazamiento x de la sombra, la longitud
+2º valor. desplazamiento y de la sombra a su extension vertical
+3º valor. radio de desenfoque, 
+4º valor, color de la sombra 
+
+
+*/    
+h2,p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.t1{
+    text-shadow: 3px 3px 3px rgb(194, 188, 188);
+
+}
+.t2{
+
+    text-shadow: -3px -3px 3px rgb(194, 188, 188); 
+}
+.t3{
+  
+    color: whitesmoke;   
+    text-shadow:
+    3px 3px 3px #999,
+    6px 6px 6px #bbb,
+    12px 12px 12px#ddd;
+    
+}
+.t4{
+    
+    text-shadow:
+    3px 3px 3px red,
+    6px 6px 6px green,
+    9px 9px 9px yellow;
+    
+}
+
+
+
+
+.sombraparrafo{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 2px black,
+    0px 0px 1em blue,
+    0px 0px 0.5em blue ;
+    color: beige;
+
+}
+
+
+
+</style>
+    <h2 class="t1">TEXTO SOMBREADO UNO</h2>
+    <h2 class="t2">TEXTO SOMBREADO DOS</h2>
+    <h2 class="t3">TEXTO SOMBREADO TRES</h2>
+    <h2 class="t4">TEXTO SOMBREADO CUATRO</h2>
+
+    <p class="sombraparrafo">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, eaque.
+        Aliquam necessitatibus accusantium recusandae tempora suscipit hic doloribus culpa temporibus!
+        Harum qui cumque impedit voluptas totam similique iusto ratione esse!
+        Consequuntur veritatis facere expedita architecto reiciendis, ut sed quidem excepturi?
+        Voluptas, earum tempora assumenda fugiat quod eveniet iure vel recusandae!
+        Nostrum accusamus magnam libero quis, inventore quidem facilis ullam explicabo.
+        Incidunt expedita perferendis soluta praesentium nostrum aliquam veniam. Voluptatibus, dolore.
+        Itaque omnis aliquam nostrum cupiditate suscipit, laudantium consectetur ullam unde!
+        Culpa sint odio commodi! Deleniti corrupti natus ipsa distinctio quia?
+        Minus quisquam at necessitatibus iusto veniam blanditiis sunt quis nesciunt!
+    </p>
+    <!--
+        /*
+https://coolors.co/ revision gradientes saturacion colores, 
+*/
+    -->
+</body>
+</html>

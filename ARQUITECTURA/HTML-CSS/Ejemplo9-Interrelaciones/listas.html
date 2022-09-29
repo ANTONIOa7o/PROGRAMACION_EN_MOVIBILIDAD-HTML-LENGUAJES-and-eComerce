@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <!--
+        -----------LISTAS-------------
+        Listas Ordenadas
+        Listas que nos sirven para presentar contenido de forma ordenada donde los distintos
+        elementos irán numerados
+        Sintaxis;
+            Partimos de una etiqueta contendedora <ol></ol>
+            <ol>
+                <li> Elemento </li>
+            </ol>
+        Atributos:
+            1.Type, especifica el tipo de numeracion
+                -> "1", numerica
+                ->"A", orden afabetico
+                ->"I" orden romano
+            -->
+            <a href="index.html"><img src="images/home2.png" alt=""></a>
+    <h2 align="center">Ejemplos de listas</h2>
+
+    <h3>Listas Ordenadas</h3>
+
+    <ol type="i">
+        <li>Juan
+            <ol>
+                <li>Maria</li>
+                <li>Juana</li>
+            </ol>
+        </li>
+        <li>Pedro</li>
+        <li>Luis</li>
+        <li>Jorge
+            <ol>
+                <li>Carmen</li>
+                <li>Alvaro</li>
+                <li>Maria Luisa</li>
+            </ol>
+        </li>
+        <li>Ana Maria</li>
+    </ol>
+
+    <!--
+continuar la numeración
+-->
+    <hr width="90%"><br>
+
+    <ol type="A">
+        <li>elemento 1</li>
+        <li>elemento 2</li>
+    </ol>
+    <p>Explicaciones del elemento 2,
+        Lorem, ipsum dolor.
+        Neque, sint quo.
+    </p>
+    <ol type="A" start="3">
+        <li>Elemento 3</li>
+    </ol>
+    <!--
+    Lista no Ordenadas,
+    no van numeradas, solo descriptivas, con estructura de orden
+    Sintaxis;
+        <ul>
+            <li>Texto, imagen, enlaces, botones</li>
+        </ul>
+-->
+<h3>Listas no Ordenadas</h3>
+<ul type="circle">
+    <li>Leche
+        <ol>
+            <li>Desnatada</li>
+            <li>Semidesnatada</li>
+        </ol>
+    </li>
+    <li><img src="../Ejemplo4-images/images/boladelmundo.png" width="3%" alt="" />Ojo que aqui viene curvas</li>
+    <li>mantequilla</li>
+    <li>Pan</li>
+    <li>Legumbre</li>
+</ul>
+<h3>Listas de definiciones</h3>
+<!--
+    Sintaxis:
+    <dl>
+        <dt></dt>
+        <dt></dt>
+    </dl>
+-->
+<dl>
+    <dt>HTML-CSS</dt>
+    <dd>Metalenguaje basado en etiquetas, para la elaboracion de contenido web</dd>
+    <dt>CSS3</dt>
+    <dd>Lenguaje en cascada para la generacion de recursos etilisticos de forma independiente</dd>
+    <dt>HTML5</dt>
+    <dd>Evolucion hacia un metalengua asincrono</dd>
+</dl>
+<!--.
+listado de velocidades, tales como Kilometros por hora y millas por hora
+-->
+<h4> Glosario de velocidades</h4>
+<dl>
+<dt> Definicion Kilometros por hora:</dt>
+<dd> El kilómetro por hora es una unidad de medida de velocidad, tanto escalar como vectorial. Un objeto viaja a una velocidad media de 1 km/h si se desplaza 1 kilómetro en una hora El símbolo utilizado para esta unidad es km/h</dd><br>
+<dt> Definicion millas por hora:</dt>
+<dd> La milla por hora es una unidad de medida de velocidad que expresa el número de millas internacionales recorridas por hora</dd>
+</dl>
+</body>
+
+</html>

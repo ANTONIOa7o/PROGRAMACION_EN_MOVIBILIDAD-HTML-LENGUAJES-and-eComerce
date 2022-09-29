@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilo Periodistico</title>
+</head>
+<body>
+    <!--
+        Nos acercamos levemente a estilos de redaccion, con la necesidad de estructurar una determinda cantidad de contenido.
+        Siendo uno de su principales desarrollos la estructura de columnas
+
+        Atributos                valor                             Descripcion
+        colum-count               nº                                nº columnas
+        colum-gap                medidas                         tamaño columna
+        colum-rule-style         solid                        estilo de la columna
+        colum-rule-witdth         medidas                       ancho de la columna
+        colum-rule-color        rgb,hex                         color columna
+
+    -->
+<style>
+    div{
+
+        column-count: 3;
+        column-rule-width: 5px;
+        column-rule-color: grey;
+        column-rule-style: hidden;
+        column-gap: 5%;
+        
+    }
+    hr{
+        width: 90%;
+    }
+    /*
+   CONTORNOS DE LETRA
+
+    Podemos realizarlo de dos formas, una de ellas desarrollando css3(1) o
+    bien a través de un atributo(2)
+    2.Atributo:
+    text-stroke, cuando una propiedad no es estandar y con muy poco soporte
+    para darle dicha solucion, se añade una referencia al servidor en concreto
+    al cual nos dirijamos, sintaxis:
+    => -moz- Dirigido a firefox
+    => -webkit- Dirigido a navegadores basados en Chromium(Chrome y Safari), absorve Opera
+    => -ms- Seria para Internet eXplorer
+        */
+        h1{
+            -webkit-text-stroke: 2px black;
+            color: transparent;
+        }
+        /*
+        1. Desarrollado en Css3
+        */
+.bordeLetra{
+    color: white;
+    background: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-shadow: 
+    -1px -1px 1px #333, 
+    1px -1px 1px #333,
+    -1px 1px 1px #333,
+    1px 1px 1px #333;
+}
+
+</style>
+
+<div>
+    <h1>Distribucion Estilo periodico</h1>
+
+    <p class="bordeLetra">
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, iste.
+        Aut unde minima possimus molestiae voluptates dignissimos repellat in consequuntur!
+        Culpa cupiditate tempora consequatur exercitationem ipsam. Veritatis aliquam quasi vero.
+        Beatae quas distinctio quis deleniti impedit eum est officia debitis.
+        Nisi nobis illum aperiam rem numquam laudantium! Itaque, distinctio libero?
+        Quos commodi illum soluta recusandae cupiditate ullam, rem atque deleniti!
+        Perferendis iusto perspiciatis molestiae mollitia sint velit, consectetur inventore autem.
+        Error delectus quam odit saepe ipsa distinctio voluptas, nam consectetur!
+        Nihil repellendus voluptatem laboriosam consequatur provident harum eaque officiis aperiam.
+        Quos voluptatem eos nihil laudantium unde vel id consequatur recusandae.
+    </p>
+        
+</div>
+<hr>
+</body>
+</html>
