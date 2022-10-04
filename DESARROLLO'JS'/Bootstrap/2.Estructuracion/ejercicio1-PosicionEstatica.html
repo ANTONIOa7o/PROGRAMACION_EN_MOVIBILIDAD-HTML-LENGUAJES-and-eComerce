@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reticulas, posiciones Estaticas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .border {
+        border-width: 1px !important;
+        border-color: white !important;
+    }
+</style>
+
+<body>
+    <div class="container" style="text-align: center;">
+        <!--
+            La clase row viene definida por Bootstrap, donde compila o desarrolla la linea de visualizacion
+            de la pantalla en 12 (reticulas-Grid)
+        -->
+        <div class="row col-md-12 border">
+            <div style=" color: brown; background-color: yellowgreen;">HEADER</div>
+        </div>
+        <div class="row col-md-12">
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;">foto</div>
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;">hero</div>
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;">carrusel</div>
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;"></div>
+        </div>
+        <div class="row col-md-12">
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;">5</div>
+            <div class="col-md-3 border"></div>
+            <div class="col-md-3 border"></div>
+            <div class="col-md-3 border" style="height:180px ; background-color: skyblue;">8</div>
+        </div>
+        <div class="row col-md-12">
+            <div class="col-md-3 border" style="height:180px ; background-color: gray;">9</div>
+            <div class="col-md-3 border" style="height:180px ; background-color:gray;">10</div>
+            <div class="col-md-3 border" style="height:180px ; background-color:gray;">11</div>
+            <div class="col-md-3 border" style="height:180px ; background-color: gray;">12</div>
+        </div>
+        <div class="row col-md-12">
+
+            <div class="col-md-6 border">Card title</div>
+            <div class="col-md-6 border" style="height:180px ; background-color: gainsboro;">Imagen</div>
+        </div>
+        <div>
+            <div class="row col-md-12 border"
+                style="text-align:center ; color: brown; background-color: darkcyan; height:80px ;">Footer</div>
+        </div>
+    </div>
+</body>
+
+</html>
