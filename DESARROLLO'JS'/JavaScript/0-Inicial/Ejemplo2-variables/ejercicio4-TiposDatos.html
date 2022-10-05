@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos-variables</title>
+</head>
+<body>
+    <!--    ================================
+            TIPOS DE VARIABLES EN JavaScript
+            ================================
+        
+        1.String -> Cadena de texto(Caracteres)
+        a.Su sintaxis siempre ira entre comillas(dobles o simples)
+        dentro de comillas iran simples y viceversa
+
+        2.Number-> Valores numericos, considerando ciertas especificiaciones:
+        a. Guarda indistintamente en una variable, cualquier cualidad de los numeros reales
+        b. Soporta 3 bases numericas: 1/Por omision las base decimal, 2/ base hexadecimal 3/ base Octal
+        c. La identificacion de los numeros hexadecimal vedrá precedipr por - 0x - y los octales precedidos
+        por - 0 -
+
+        3.Boolean-> Variable buleana, elemento de la logica, true o false. Consideraciones:
+        a.true, o false, valores y en minuscula
+        b.Generan comparaciones
+        c.Su equivalente numerico será false=0 y true=1 o disninto de 0
+
+        4.objects -> fecha
+
+        5.Null- > No encuentra el valor que espera, tendremos referencias de la variable,
+        var nombre="";
+        var numero=0;
+
+        var array=[];
+        var clave=null; 
+
+        6. Undefinded La variable continua definida no hay no valor ni tipo de variable
+
+    -->
+    <script>
+
+        var texto="JavaScript";//string
+        var numero=7;//number
+        var buleana=false;//boolean
+        var fecha = new Date();//Objects 
+        var nulo= null;//null
+        var variable;//undefined
+
+        /*
+        Rastreador de variables o identificador
+        typeOf() nos identifica/testea la variable pero sin evaluarla
+        */
+document.write('var texto: '+ texto +' el tipo de variable es: '+typeof(texto)+'<br>');
+document.write('var numero: '+ numero +' el tipo de variable es: '+typeof(numero)+'<br>');
+document.write('var buleana: '+ buleana +' el tipo de variable es: '+typeof(buleana)+'<br>');
+document.write('var fecha: '+ fecha +' el tipo de variable es: '+typeof(fecha)+'<br>');
+document.write('var nulo: '+ nulo +' el tipo de variable es: '+typeof(nulo)+'<br>');
+document.write('var variable: '+ variable +' el tipo de variable es: '+typeof(variable)+'<br>');
+
+ 
+    </script>
+</body>
+</html>

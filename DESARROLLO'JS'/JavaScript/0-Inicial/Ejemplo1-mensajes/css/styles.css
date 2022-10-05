@@ -1,0 +1,43 @@
+h1{
+
+    text-align: center;
+    color: coral;
+    text-shadow: 3px 3px 4px silver;
+    font-weight: bold;
+    font-size: xx-large;
+    font-family: sans-serif,cursive;
+}
+/*
+otra conexion entre Script y css
+*/
+
+/*efectos del Alert*/
+
+
+/*fondo*/
+.swal-overlay{
+    background-color: rgb(210, 216, 210);
+
+}
+/*ventana*/
+.swal-modal{
+    border: 2px solid black;
+    font-weight: bolder;
+    
+}
+/*footer*/
+.swal-footer{
+    background-color: rgba(65, 236, 65, 0.815);
+    margin-top: 2rem;
+    border-top: 2px solid black;
+}
+.swal-button {
+color: white;
+    border-radius: 2px;
+    background-color:rgb(182, 230, 237);
+    font-size: 12px;
+    border: 1px solid #3e549a;
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    text-align: center;
+  }
