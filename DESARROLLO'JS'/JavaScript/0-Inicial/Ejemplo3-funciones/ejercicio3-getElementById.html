@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getElementById</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <script src="js/script3.js"></script>
+</head>
+
+<body>
+  <!--
+        El metodo getElementById()=> NOS INYECTA EN EL ELEMENTO QUE CONTINE EL ATRIBUTO id="", (puntero)
+        CON EL VALOR ESPECIFICADO. Uso extendido, han perdido la relevancia por otras llamadas al puntero.
+        Su contribucion principal no es otra que la de obtener informacion o cambiarla con respecto 
+        a la respueta o accion de un elemento del DocType
+    -->
+
+  <div class="container" align="center">
+    <div id="resultado" class="card text-bg-light mb-3" style="max-width: 24rem;">
+      <div class="card-header">FUNCIONES</div>
+      <div class="card-body">
+        <h5 class="card-title">Presiona los botones para visualizar los Métodos</h5>
+        <p class="card-text">
+          Accede a las diversas funciones de las variables numericas, de texto y de fecha o Calendario
+        </p>
+      </div>
+    </div>
+    <button onclick="funcionMath()" class="btn btn-outline-primary">∱(Matemáticas)</button>
+    <button onclick="funcionString()" class="btn btn-outline-primary">∱(Texto)</button>
+    <button onclick="funcionDate()" class="btn btn-outline-primary">∱(Fechas)</button>
+
+  </div>
+</body>
+
+</html>
