@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Montar un reloj</h3>
+        <p>
+    Aplicacion de un reloj, donde el usario pueda abrir y cerrar la visualizacion del reloj
+        </p>
+    <cite>Condiciones</cite>
+        <ol>
+            <li>dos botones uno apertura y otro de cierre</li>
+            <li>Uno de los botones o ambos con visualizacion de imagen,utf, path(imagens vectorizadas)</li>
+            <li>dicho reloj,muestre horas, minutos y segundos</li>
+            <li>No será es necesario el movimiento de los segundos</li>
+            <li>Se valora con 1 pto, dicha prueba
+                <ol>
+                    <li>0.6 estructrura de script</li>
+                    <li>0.4 estructura de visualizacion</li>
+                </ol>
+            </li>
+
+        </ol>
+    </div>
+    <div class="container" style="text-align: center ; width:24rem ;">
+        <a onclick="miHora()"><img src="images/started.png" alt=""></a>
+        
+        <div id="resultado" class="reloj"></div>
+        <a onclick="cerrar()"><img src="images/cerrar3.png" style="width:10% ;"></a>
+
+    </div>
+</body>
+</html>

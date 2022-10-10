@@ -1,0 +1,13 @@
+.reloj{
+    width: 24rem;
+    background-color: black;
+    font-size: 100px;
+    color: green;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+img{
+    width: 33%;
+}
