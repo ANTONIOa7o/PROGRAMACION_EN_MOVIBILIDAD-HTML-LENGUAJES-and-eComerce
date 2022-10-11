@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUCTURA DE CONTROL: if else</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <!--
+                    =============
+                       if else
+                    ============
+
+
+        Nos permite tomar decisiones con respecto a una variables o varias, partiendo 
+        del cumplimiento(true) o no de determinadas condiciones establecidas.
+
+        Sintaxis:
+
+        if(condicion=true){
+
+            [sentencia1 se va ejectuar mientra la condicion sea true];
+        
+        }else{
+
+            [setencia2, ejecuta mientra la condicion sea false]
+        }
+
+    [Definicion: Realiza evaluaciones de comprobacion sobre la validez(true, false)
+     en una condicion establecida. Como premisas logicas, su ejecucion parte de la veracidad
+     de la primera sentencia, dejando espacio a una posible falsacion con otra sentencia]
+
+            
+
+        Ejemplo:
+        var numero=window.prompt("Introduce santo y seña")
+
+
+        if(numero == "jerico"){
+            swal("password correcto");//true
+        }else{
+            swal("password incorrecto");//false
+        };
+    -->
+    <script>
+
+        var numero1 = 4;
+
+
+      /*   if (numero >= 5) {
+            swal("El numero es mayor o igual que 5");//true
+        } else {
+            swal("El numero será menor que 5");//false
+        };
+ */
+        //Añadir otra variable, anidaciones simples
+
+        var numero2 = 1;
+
+        if (numero1 >= 5) {
+            swal("El numero1 es mayor o igual que 5");//false
+        } else if (numero2 >= 5) {
+            swal("El numero2 es mayor o igual que 5");//false
+        } else {
+            swal("Ambos numeros serán menores que 5");//true
+        }
+
+
+
+    </script>
+</body>
+
+</html>
