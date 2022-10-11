@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Asignacion</title>
+</head>
+
+<body>
+    <!--
+                ============================
+                OPERADORES DE ASIGNACION
+                ============================
+
+                dESCRIPCION                         oPERADOR
+        
+            Asignacion directa                         =
+            Adicion                                    +=
+            Sustracion                                 -=
+            Multiplicacion                             *=
+            Division                                   /=
+            modulo(valor del resto)                    %=
+
+                                                    dividendo/divisor
+                                                    resto       cociente
+
+            *resto de una division, será el numero que nos queda como resultado de una division
+            finalizada, entenderemos como resto exacto, aquel que acabe en -0-. el valor hace 
+            referencia al operador del resto
+    -->
+    <script>
+        //Asignacion directa y simple
+        var numero = 5;//Prueba con variable 0 y observar la trayectoria de carga de la variable
+        //Asignaciones compuestas simple
+        var numero = numero + 3;
+        /* console.log(numero); */
+        //Asignaciones compuestas
+        numero += 3;
+        console.log(numero);
+
+        numero=numero*6;
+        numero *= 6;
+       /*  console.log(numero); */
+       numero=numero/9;
+        numero /= 9;
+   /*      console.log(numero); */
+   numero=numero-2;
+        numero -= 2;
+          console.log(numero);
+
+
+
+
+    </script>
+</body>
+
+</html>

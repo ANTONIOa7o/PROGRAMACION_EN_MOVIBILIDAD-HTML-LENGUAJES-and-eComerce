@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores de Comparacion</title>
+</head>
+<body>
+    <!--
+Podemos clasficarlos en 3 tipos de operadores:
+        a. Operadores Logicos
+
+    Operadores                      simbolo                      Descripcion
+
+       Y                                 &&                      Considera true(verdadero) si ambas sentencias lo son
+                                                                en el momento qu una de las condiciones no se cumplan
+                                                                toda la sentencia será false
+
+       Ó                                ||                      Considera true(verdadero) si alguna ded las sentencias lo son
+                                                                si alguna sentencia no se cumple toda la sentencia continua en true
+
+      !SI(NO)                           !                       Considera su valor contrario
+
+
+
+        b. Operadores Relacionales
+
+
+    Operadores                  simbolo                         Descrpcion
+
+    igual a                        ==                       Igualdad entre elementos comparados
+
+    distinto de                    !=                       Contrario a ese elemento comparado
+
+    Mayor, mayor e igual            >,>=                    Comparacion de cantidad mayor que, mayor e igual que 
+    Menor, menor e igual            <,<=                    Comparacion de catidad menor que, menor e igual que
+
+    iguadad estricta                 ===                    Igualdad de toda la naturaleza o aspectos de la variable
+
+    Distinto a la estricta          !==                     Distinto a elemento comparado en toda su naturaleza
+        
+    
+    c. Operdores Aritmeticos
+
+    Operadores                          Simbolo                     Descripcion
+
+    sumas, resta                        +,-
+    division y multiplicacion           /,*                 Calculos aritmeticos basicos
+
+    Cambio de signo                     -                   Cambio de signo
+
+    Incremento                          ++                  incremento aritmetico
+
+    decremento                          --                  decremento aritmetico
+
+    resto                               %
+
+
+    -->
+<script>
+var comparacion = 7;//number
+
+
+console.log("Igualdad: " +(comparacion==7) );
+console.log("Desigualdad: " +(comparacion!=7) );
+console.log("Mayor: " +(comparacion > 7) );
+console.log("Mayor o igual: " +(comparacion>=7) );
+console.log("Menor: " +(comparacion < 7) );
+console.log("Menor o igual: " +(comparacion <= 7) );
+//Igualdad estricta
+console.log("Igualdad: " +(comparacion =="7") );//mellizos
+console.log("Igualdad estricta: " +(comparacion ==="7") );//string Gemelos
+
+//Desigualdad
+console.log("Desigualdad: " +(comparacion!= "7") );
+console.log("Desigualdad estricta: " +(comparacion!=="7") );
+
+//Operadores Logicos
+
+var nombre1="Juan";
+var nombre2="Pepa";
+                                    //true↓              false ↓          = false
+console.log("Condicion Y: " + ((nombre1=="Juan")&&(nombre2 =="Pepaaaa")) );
+                                     //true↓              false ↓          = true
+console.log("Condicion O: " + ((nombre1=="Juan")||(nombre2 =="Pepaaa")) );
+
+
+console.log("Negacion 2º var: " + ((nombre2!== "Pepaaa")) );
+console.log("Negacion 1º var: " + (!(nombre1== "Juan")) );
+
+
+</script>
+
+
+</body>
+</html>
