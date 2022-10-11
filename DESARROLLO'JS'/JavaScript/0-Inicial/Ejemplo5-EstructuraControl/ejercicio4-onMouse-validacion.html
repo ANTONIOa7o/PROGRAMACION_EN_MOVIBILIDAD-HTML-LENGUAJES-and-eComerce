@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Onmouseover & OnmouseOut</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="">
+    <script src="js/script4.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="text-align: center; margin:0 auto; width: 380px; ">
+        <h2>OnmouseOut & OnmouseOver</h2> <br>
+        <form action="">
+            <div>
+                <label class="form-label">Nombre</label>
+                <input type="text" name="" id="nombre" class="form-control" placeholder="1º dato">
+            </div>
+            <div>
+                <label class="form-label">Apellido</label>
+                <input type="text" name="" id="apellido" class="form-control" placeholder="2º dato">
+            </div>
+            <input onmouseover="mensaje()" onmouseout="limpiar()" type="button" name="" value="confirmar"class="btn btn-outline-info">
+        </form>
+        <textarea name="" id="resultado" cols="48" rows="4" class="form-control"></textarea>
+    </div>
+
+</body>
+
+</html>

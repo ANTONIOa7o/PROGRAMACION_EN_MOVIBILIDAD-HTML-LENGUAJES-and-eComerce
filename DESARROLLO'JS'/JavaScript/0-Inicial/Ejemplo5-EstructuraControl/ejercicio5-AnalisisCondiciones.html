@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisis Condiciones if else</title>
+</head>
+<body>
+    <script>
+        /*
+        1.-Reflexion como he de tener la condicion para logra el evento 1
+        2.- Analiza  como condicion 10 su  respuesta y porque, Como solucionarlo?
+        3.- Igualando las condiciones igual a 10 en 1º condicion y 2º que evento prevalece?
+        4. 
+        */
+/*Ejemplo 1*/
+var condicion=40;
+        //1 condicione 1 al 9    21               10
+if( (condicion > 0 && condicion < 10)||(condicion == 10) ){//true
+    document.write("Evento 1"+"<br>");
+
+}else if( condicion > 10 && condicion < 40){
+    document.write("Evento 2"+"<br>");
+
+}else{
+    document.write("Evento 3"+"<br>");
+}
+/*Ejemplo 2
+1.-¿Que condicion habrá que cambiar para que salga Luisa Fernanda?
+*/
+
+var nombre ="Fernando";
+var nombre2="Luisa Fernanda"
+
+if(nombre == nombre2){//false
+document.write(nombre);
+
+}else{
+    document.write(nombre2);
+}
+    </script>
+</body>
+</html>
